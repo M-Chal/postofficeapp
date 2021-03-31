@@ -15,7 +15,7 @@
 <p>npm start</p>
 
 <h1>Things to note:</h1>
-<p>While trying to POST to the Post Office API, I was faced with the CORS error. I tried many ways around it but the easiest way was to use https://cors-anywhere.herokuapp.com/API_URL </br> It's extremely not ideal but it's an easy fix from the server-side, I'm guessing it's a security feature</p>
+<p>While trying to POST to the Post Office API, I was faced with the CORS error. I tried many ways around it but the easiest way was to use https://cors-anywhere.herokuapp.com/ </br> It's extremely not ideal but it's an easy fix from the server-side, I'm guessing it's a security feature</p>
 
 <h1>My idea behind the app</h1>
 <p>I wanted the app to be simple, intuitive and easy to show the user where the closest post office was</p>
