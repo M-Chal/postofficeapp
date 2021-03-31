@@ -14,8 +14,9 @@ function App() {
   const fetchPostOffice = async () => {
     /*Displays a Loading "toast" while the api is being posted*/
     toast.loading("Loading...");
-
-    const query = {searchString : search};    
+    /*Structuring query from search state*/
+    const query = {searchString : search};  
+    /*axios.post to send a POST query to the API (Using Jenky method to bypass CORS error) */  
     axios.post("https://cors-anywhere.herokuapp.com/https://www.postoffice.co.uk/.rest/branch-finder/ep/branch", query)
       .then(response => setResponse(response));
   };
@@ -27,7 +28,7 @@ function App() {
       toast.dismiss();
       toast.success("Success!");
 
-      /*Updating the search location state, comes as "latitude|longitude" from api, need to seperate them using split()*/
+      /*Updating the search location state, comes as "longitude|latitude" from api, need to seperate them using split()*/
       setSearchLocation(response.data.responseBody.selectedCoordinates.split("|"));
       setZoom(12);
     }

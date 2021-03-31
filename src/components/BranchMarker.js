@@ -28,7 +28,7 @@ function BranchMarker({branchInfo}) {
 
     return (
         <div>
-            {/*Ternary operator to show the info if the showingInfo state is true, else it's showing*/}
+            {/*Ternary operator to show the info if the showingInfo state is true, else it's showing null*/}
             {showingInfo? showInfo() : null}
             <RoomIcon style={{color:"red", fontSize:"2rem",position: 'absolute', transform: 'translate(-50%, -50%)'}} onClick={() => toggleShowingInfo()}/>
         </div>
