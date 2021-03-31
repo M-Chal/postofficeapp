@@ -1,0 +1,10 @@
+.infoBox{
+    position: absolute;
+    background-color: white;
+    width: 10rem;
+    z-index: 99;
+    transform: translate(-50%, -110%);
+    padding: 1.5rem;
+    border: 1px solid black;
+    border-radius: 10%;
+}

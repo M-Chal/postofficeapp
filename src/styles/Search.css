@@ -1,0 +1,15 @@
+.search-Container, form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    position: absolute;
+    z-index: 99;
+    margin-top: 2rem;
+}
+
+.InputField{
+    z-index: 99;
+    background-color: white;
+    width: 30%;
+}
